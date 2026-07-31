@@ -107,6 +107,20 @@
 
 	};
 
+
+	function toggleResume() {
+  const preview = document.getElementById('resume-preview');
+  const btn = document.getElementById('resume-btn');
+
+  if (preview.style.display === 'none') {
+    preview.style.display = 'block';
+    btn.textContent = 'Hide Resume';
+  } else {
+    preview.style.display = 'none';
+    btn.textContent = 'View Resume';
+  }
+}
+
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {

@@ -4737,3 +4737,14 @@ input, select, textarea {
 		}
 
 	}
+	#resume-preview {
+  transition: all 0.3s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#resume-preview.show {
+  opacity: 1;
+  max-height: 800px;
+}
